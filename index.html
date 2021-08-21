@@ -780,6 +780,111 @@
 		<!-- Cluuf configuration https://cluuftracks.herokuapp.com -->
 		</script>
 
+		<script>
+
+			const formSubmit = () => {
+				connectToCluufCRM({
+					email: {
+						value: jQuery("#email").val(),
+						required: true,
+						message: "Please verify Email and try again."
+					},
+					name: {
+						value: jQuery("#name").val(),
+						required: true,
+						message: "Please verify Name and try again."
+					},
+					message: {
+						value: jQuery("#message").val(),
+						required: true,
+						message: "Please verify Message and try again."
+					},
+					phone: {
+						required: false,
+					},
+					campaign: "Contact Us - Website Form",
+					formId: "60740e2517c4317041b6a591", // proporcionado por cluuf-web
+					successMessage: "El mensaje ha sido enviado con exito",
+				}, {
+					onSuccess: (response) => {
+						jQuery("#name").val(''),
+							jQuery("#email").val('');
+						jQuery("#message").val('');
+					},
+					onError: () => console.log("Error enviando el formulario"),
+				}
+				);
+			}
+			const resetMessagesForm = () => {
+				jQuery(".formMessageSuccess").hide();
+				jQuery(".formMessageError").hide();
+				jQuery(".formMessageValidation").hide();
+			}
+
+		</script>
+
+		<script>
+			const loadCluufContent = ({
+				method = "GET",
+				params = "",
+				url = "",
+				body = null,
+				contentType = "application/x-www-form-urlencoded",
+			}) => {
+				try {
+					const xhttp = new XMLHttpRequest();
+					var searchParams = new URLSearchParams(params);
+					xhttp.open(method, url, true);
+					xhttp.setRequestHeader("Content-type", contentType);
+					xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
+
+					xhttp.onreadystatechange = function () {
+						if (xhttp.readyState === XMLHttpRequest.DONE) {
+							var status = xhttp.status;
+							if (status === 0 || (status >= 200 && status < 400)) {
+								const result = JSON.parse(xhttp.responseText);
+								Object.keys(result).forEach((key) => {
+									if (result[key].type === "TEXT") {
+										$(`.clf-content-${result[key].code}`).html(result[key].content);
+									}
+
+
+									if (result[key].type === "LIST") {
+										let listado = result[key].content.split(",");
+										listado.forEach((key2, index) => {
+											console.log(`.cluuf-list-${result[key].code}-${index}`, key2);
+											$(`.clf-list-${result[key].code}-${index}`).text(key2);
+										});
+									}
+
+									if (result[key].type === "HTML") {
+										$(`.clf-content-${result[key].code}`).html(result[key].content);
+									}
+
+									if (result[key].type === "IMAGE") {
+										$(`.clf-src-${result[key].code}`).attr(
+											"src",
+											result[key].content
+										);
+									}
+								});
+							} else {
+							}
+						}
+					};
+					xhttp.send();
+				} catch (error) { }
+			};
+
+			$(document).ready(function () {
+				loadCluufContent({
+					method: "GET",
+					url: "https://cluuf.s3.sa-east-1.amazonaws.com/93063647283012094424995467.json",
+				});
+			});
+
+		</script>
+
 
 	</body>
 
