@@ -5573,7 +5573,7 @@ ul.cart_details li span {
 }
 #confirm p {
   font-size: 16px !important;
-  font-size: 16px !important/16pxrem;
+  font-size: 16px !important;
   margin-bottom: 0;
 }
 
@@ -5623,6 +5623,8 @@ ul.cart_details li span {
   width: 100%;
   text-align: center;
 }
+
+
 .grid ul li {
   display: inline-block;
   margin: 0;
@@ -5633,6 +5635,12 @@ ul.cart_details li span {
   background-color: #000;
   list-style: none;
 }
+
+.grid ul.magnific-gallery li {
+  width: 50%;
+}
+
+
 @media (max-width: 991px) {
   .grid ul li {
     width: 50%;
@@ -6052,8 +6060,7 @@ a.grid_item_adventure:hover figure img {
 }
 
 a.grid_item.latest_adventure h3 {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 2rem;
 }
 a.grid_item.latest_adventure em {
   text-transform: uppercase;
