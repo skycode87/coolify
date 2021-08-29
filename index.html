@@ -869,7 +869,7 @@
 
 									if (result[key].type === "BACKGROUND") {
 										console.log(`.clf-background-${result[key].code}`)
-										$(`.clf-background-${result[key].code}`).css(
+										$(`body.clf-background-${result[key].code}`).css(
 											"background",
 											`url(${result[key].content}) !important`
 										);
