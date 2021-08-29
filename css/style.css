@@ -9391,15 +9391,15 @@ ul.plan-features {
 }
 
 .title-medium{
-  font-size: 42px;
+  font-size: 42px !important;
 }
 
 .title-big{
-  font-size: 56px;
-   font-weight: bold;
+  font-size: 56px !important;
+   font-weight: bold !important;
 }
 
 .title-small{
-  font-size: 42px;
-   font-weight: bold;
+  font-size: 42px !important;
+   font-weight: bold !important;
 }
