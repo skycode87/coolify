@@ -9403,3 +9403,17 @@ ul.plan-features {
   font-size: 42px !important;
    font-weight: bold !important;
 }
+
+@media only screen and (max-width: 769px) {
+  .title-medium{
+    font-size: 32px !important;
+  }
+  
+  .title-big{
+    font-size: 42px !important;
+  }
+  
+  .title-small{
+    font-size: 32px !important;
+  }
+}
