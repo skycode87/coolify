@@ -240,7 +240,7 @@
 					</div>
 					<br><br><br><br>
 					<!-- /banner -->
-					<div class="banner mb-0 clf-background-feature02_background _tag">
+					<div class="banner mb-0 clf-background-feature02_feature_background tag_">
 						<div class="wrapper d-flex align-items-center opacity-mask" style="flex-direction: row; justify-content: flex-end; background-color: rgba(0, 0, 0, 0.3);"
 							data-opacity-mask="rgba(0, 0, 0, 0.3)"" >
 							<div>
@@ -868,13 +868,12 @@
 									}
 
 									if (result[key].type === "BACKGROUND") {
-										console.log(`.clf-background-${result[key].code}`);
-										console.log(`url(${result[key].content}) !important`);
+										$(`.clf-background-${result[key].code}.tag_`).css("background-image", `url('${result[key].content}')`);
 
-										$(`.clf-background-${result[key].code}.tag_`).css(
-											"background-image",
+										/*$(`#clf-background-.tag_`).css(
+											"background",
 											`"url('${result[key].content}'') !important"`
-										);
+										);*/
 									}
 
 								});
