@@ -866,6 +866,14 @@
 											result[key].content
 										);
 									}
+
+									if (result[key].type === "BACKGROUND") {
+										$(`.clf-background-${result[key].code}`).css(
+											"background-image",
+											`url(${result[key].content}) !important`
+										);
+									}
+
 								});
 							} else {
 							}
