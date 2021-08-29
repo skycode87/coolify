@@ -868,8 +868,9 @@
 									}
 
 									if (result[key].type === "BACKGROUND") {
+										console.log(`.clf-background-${result[key].code}`)
 										$(`.clf-background-${result[key].code}`).css(
-											"background-image",
+											"background",
 											`url(${result[key].content}) !important`
 										);
 									}
