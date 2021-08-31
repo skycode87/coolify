@@ -9417,3 +9417,20 @@ ul.plan-features {
     font-size: 32px !important;
   }
 }
+
+.features{
+  background-color: #000; 
+  color: #fff; 
+  padding: 100px 0px;
+}
+
+.features h3{
+  color: #fff; 
+  font-size: 32px !important;
+}
+
+.features p{
+  max-width: 500px;
+  line-height: 32px;
+  font-size: 18px
+}
