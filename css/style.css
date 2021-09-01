@@ -285,6 +285,11 @@ Author URI: http://themeforest.net/user/Ansonika/
     color: #555 !important;
     display: block;
   }
+
+  ul.mm-listview li a.btn-cta {
+    color: #fff !important;
+  }
+
 }
 #menu.fake_menu {
   display: none !important;
@@ -2154,7 +2159,6 @@ a#moveDown {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.4;
 }
 .header-video iframe {
   height: 100%;
@@ -5637,9 +5641,15 @@ ul.cart_details li span {
 }
 
 .grid ul.magnific-gallery li {
-  width: 50%;
+  width: 25%;
 }
 
+.btn-cta{
+  background: #fc5b62;
+    color: #fff !important;
+    padding: 10px !important;
+    border-radius: 10px !important;
+}
 
 @media (max-width: 991px) {
   .grid ul li {
@@ -6125,9 +6135,12 @@ a.grid_item.latest_adventure em {
 }
 
 .adventure_feat h3 {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 1rem;
   margin-top: 20px;
+  max-width: 300px;
+  margin: auto;
+  line-height: 32px;
+  margin-top: 30px;
 }
 
 .hero_in.adventure_detail {
@@ -7761,7 +7774,7 @@ a.btn_explore:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 400px;
+  min-height: 800px;
   padding: 10% 0;
 }
 
