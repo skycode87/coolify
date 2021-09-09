@@ -9447,3 +9447,8 @@ ul.plan-features {
   line-height: 32px;
   font-size: 18px
 }
+
+.td-gray{
+  font-weight: bold !important;
+  background-color: #fcfcfc !important;
+}
