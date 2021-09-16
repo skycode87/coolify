@@ -15,9 +15,9 @@
 		<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
-
-		<!-- GOOGLE WEB FONT -->
-		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 		<!-- BASE CSS -->
@@ -30,6 +30,17 @@
 		<link href="css/vendors.css" rel="stylesheet">
 
 		<style>
+			h1,
+			h2,
+			h3,
+			h4 {
+				font-family: 'Play', sans-serif !important;
+			}
+
+			p {
+				font-family: "Poppins", Helvetica, sans-serif !important;
+			}
+
 			.call_section.adventure {
 				background: url(img/home/coolify02.webp) center center no-repeat fixed;
 				-webkit-background-size: cover;
@@ -89,10 +100,7 @@
 					<div data-loader="circle-side"></div>
 				</div><!-- /Page Preload -->
 				<div id="logo">
-					<a href="index.html">
-						<img src="img/logo.svg" width="150" height="36" alt="" class="logo_normal">
-						<img src="img/logo_sticky.svg" width="150" height="36" alt="" class="logo_sticky">
-					</a>
+					<h2 style="font-weight: bold;">CoolProducts</h2>
 				</div>
 				<!-- /top_menu -->
 				<a href="#menu" class="btn_mobile">
@@ -115,6 +123,7 @@
 			<!-- /header -->
 
 			<main>
+				<!--
 				<section>
 					<video loading="lazy" width="100%" height="auto" autoplay muted style="margin: auto; display: block;" loop>
 						<source src="video/adventure.mp4" type="video/mp4">
@@ -128,54 +137,54 @@
 						Your browser does not support the video tag.
 					</video>
 				</section>
+-->
 
 				<div class="bg_color_1" id="inicio">
 					<div class="container container-custom margin_80_55">
 						<div class="main_title_2">
-							<h2 data-aos="zoom-in-down" data-aos-duration="800" class="clf-content-main_title tag_ title-medium"></h2>
+							<h2 style="font-weight: bold;" data-aos="zoom-in-down" data-aos-duration="800" class="clf-content-main_title tag_ title-medium"></h2>
 							<p data-aos="zoom-in-down" data-aos-duration="900" style="margin: 0px;" class="clf-content-main_summary tag_">El aire Acondicionado Portatil más</p>
-							<p data-aos="zoom-in-down" data-aos-duration="1000" class="clf-content-main_subtitle tag_ title-big"></p>
+							<h3 data-aos="zoom-in-down" data-aos-duration="1000" class="clf-content-main_subtitle tag_ title-big"></h3>
 						</div>
-						<div class="row adventure_feat" style="padding: 30px 0px 70px 0px;">
-							<div class="col-md-4 marginTop60" style="text-align: center;">
-								<img loading="lazy" class="clf-src-minifeature01_icon tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-								<h3><span class="clf-content-minifeature01_title tag_"></span></h3>
-								<p class="clf-content-minifeature01_subtitle tag_"></p>
-							</div>
-							<div class="col-md-4 marginTop60" style="text-align: center;">
-								<img loading="lazy" class="clf-src-minifeature02_icon tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-								<h3><span class="clf-content-minifeature02_title tag_"></span></h3>
-								<p class="clf-content-minifeature02_subtitle tag_"></p>
+						<div class="row mini-items " style="padding: 30px 0px 70px 0px;">
+							<div class="col-md-6 " style="text-align: center;">
+
+								<h3 data-aos="zoom-in-down" data-aos-duration="1000">
+									<img src="img/home/check.svg" width="20px">
+									<span class="clf-content-minifeature01_title tag_"></span>
+								</h3>
+								<h3 data-aos="zoom-in-down" data-aos-duration="1500">
+									<img src="img/home/check.svg" width="20px">
+									Peso ligero de tan solo 348 gramos
+								</h3>
+								<h3 data-aos="zoom-in-down" data-aos-duration="1100">
+									<img src="img/home/check.svg" width="20px">
+									<span class="clf-content-minifeature05_title tag_"></span>
+								</h3>
+								<h3 data-aos="zoom-in-down" data-aos-duration="1200">
+									<img src="img/home/check.svg" width="20px">
+									<span class="clf-content-minifeature02_title tag_"></span>
+								</h3>
+								<h3 data-aos="zoom-in-down" data-aos-duration="1300">
+									<img src="img/home/check.svg" width="20px">
+									<span class="clf-content-minifeature06_title tag_"></span>
+								</h3>
+								<h3 data-aos="zoom-in-down" data-aos-duration="1400">
+									<img src="img/home/check.svg" width="20px">
+									<span class="clf-content-minifeature04_title tag_"></span>
+								</h3>
+
+								<h3 data-aos="zoom-in-down" data-aos-duration="1600">
+									<img src="img/home/check.svg" width="20px">
+									Baja tu temperatura corporal en 12 grados en solo 10 segundos
+								</h3>
+
 
 							</div>
 
-							<div class="col-md-4 marginTop60" style="text-align: center;">
-								<img loading="lazy" class="clf-src-minifeature05_icon tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-								<h3><span class="clf-content-minifeature05_title tag_"></span></h3>
-								<p class="clf-content-minifeature05_subtitle tag_"></p>
-
+							<div class="col-md-6 " style="text-align: center;">
+								<img src="img/home/coolify.gif" style="max-width: 80%;" data-aos="zoom-in-down" data-aos-duration="2000">
 							</div>
-
-							<div class="col-md-4 marginTop60" style="text-align: center;">
-								<img loading="lazy" class="clf-src-minifeature04_icon tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-								<h3><span class="clf-content-minifeature04_title tag_"></span></h3>
-								<p class="clf-content-minifeature04_subtitle tag_"></p>
-
-							</div>
-
-							<div class="col-md-4 marginTop60" style="text-align: center;">
-								<img loading="lazy" class="clf-src-minifeature06_icon tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-								<h3><span class="clf-content-minifeature06_title tag_"></span></h3>
-								<p class="clf-content-minifeature06_subtitle tag_"></p>
-							</div>
-
-							<div class="col-md-4 marginTop60" style="text-align: center;">
-								<img loading="lazy" class="clf-src-minifeature03_icon tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
-								<h3><span class="clf-content-minifeature03_title tag_"></span></h3>
-								<p class="clf-content-minifeature03_subtitle tag_"></p>
-
-							</div>
-
 
 
 
@@ -185,16 +194,22 @@
 				</div>
 
 
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/home/promo1.png" style="max-width: 100%;">
+					</div>
+				</div>
+
 
 				<section>
-					<img loading="lazy" width="100%" src="img/home/coolifys.jpeg">
+					<img loading="lazy" width="100%" src="img/home/colifys.webp">
 				</section>
 
 				<section class="features" id="caracteristicas">
 					<div class=" main_title_3" style="text-align:center; max-width: 1200px; margin: auto;">
-						<p style="max-width: 900px; margin: auto; font-size: 22px !important; line-height: 36px;" data-aos="zoom-in-down" data-aos-duration="900"
+						<p style="max-width: 900px; margin: auto; font-size: 22px !important; line-height: 36px;" data-aos="zoom-in-down" data-aos-duration="1600"
 							class="clf-content-main_features_subtitle tag_ title-medium"></p>
-						<h2 data-aos="zoom-in-down" data-aos-duration="800" style="color: #fff;" class="clf-content-main_features_title tag_ title-big"></h2>
+						<h2 data-aos="zoom-in-down" data-aos-duration="1600" style="color: #fff;" class="clf-content-main_features_title tag_ title-big"></h2>
 
 					</div>
 					<div class="row" style="max-width: 1200px; margin: auto;">
@@ -257,10 +272,10 @@
 							</div>
 						</div>
 
-						<div class="col-xl-12 col-lg-12 col-md-12" style="margin-top: 100px;" data-aos="zoom-in-down" data-aos-duration="800">
+						<div class="col-xl-6 col-lg-6 col-md-6" style="margin-top: 100px;" data-aos="zoom-in-down" data-aos-duration="800">
 							<a href="#!" class="grid_item latest_adventure">
 								<figure>
-									<img loading="lazy" style="max-width: 600px; margin: auto; display: block;" class="clf-src-main_featureimage05 tag_" src="img/adventure_latest_1.jpg"
+									<img loading="lazy" style="max-width: 400px; margin: auto; display: block;" class="clf-src-main_featureimage05 tag_" src="img/adventure_latest_1.jpg"
 										class="img-fluid" alt="">
 									<div class="info">
 									</div>
@@ -272,24 +287,62 @@
 							</div>
 						</div>
 
+						<div class="col-xl-6 col-lg-6 col-md-6" style="margin-top: 100px;" data-aos="zoom-in-down" data-aos-duration="800">
+							<br><br>
+							<video width="280px" height="auto" autoplay muted style="margin: auto; display: block;" loop>
+								<source src="video/blackvideo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+							<div class="titles" style="text-align: center; max-width: 600px; margin: auto; margin-top: 70px">
+								<h3 style="text-align: center;" class="title-medium clf-content-main_feature05 tag_"></h3>
+								<p style="text-align: center; max-width: 100%; margin: auto;" class=" clf-content-main_subtitle_feature05 tag_"></p>
+							</div>
+						</div>
+
+
+
+
+
+
+
 					</div>
 				</section>
 
-				<section>
-					<video width="100%" height="auto" autoplay muted style="margin: auto; display: block;" loop>
-						<source src="video/blackvideo.mp4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</section>
+
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/home/promo4.png" style="max-width: 100%;">
+					</div>
+
+					<div style="padding: 50px 20px; max-width: 900px; margin: auto">
+						<h2 style="text-align: center; padding: 20px; font-size: 52px; margin: auto">
+							<b> COOLIFY</b>
+						</h2>
+						<p style="text-align: center; padding-top: 20px; font-size: 38px; margin: auto; max-width: 900px;">
+							Lucir fresco mientras te mantienes fresco
+						</p>
+						<h2 style="text-align: center; padding: 20px; font-size: 52px; margin: auto">
+							<b> En cualquier momento.<br> En cualquier Lugar. </b>
+						</h2>
+					</div>
+
+					<div class="col-md-12">
+						<img src="img/home/promo5.png" style="max-width: 100%;">
+					</div>
+
+				</div>
+
 
 				<div class="bg_color_1" id="inicio">
-					<div class="container container-custom margin_80_55">
-						<div class="main_title_2">
-							<h2 data-aos="zoom-in-down" data-aos-duration="800" class="clf-content-speed_title tag_ title-medium"></h2>
-							<p data-aos="zoom-in-down" data-aos-duration="900" style="margin: 0px;" class="clf-content-speed_summary tag_">El aire Acondicionado Portatil más</p>
-							<p data-aos="zoom-in-down" data-aos-duration="1000" class="clf-content-speed_subtitle tag_ title-big"></p>
-						</div>
-						<div class="row adventure_feat" style="padding: 30px 0px 70px 0px;">
+					<div class="main_title_2 ">
+						<h2 style="font-size: 48px !important;font-weight: bold;" data-aos="zoom-in-down" data-aos-duration="800" class="clf-content-speed_title tag_ title-medium">
+						</h2>
+						<p data-aos="zoom-in-down" data-aos-duration="900" style="margin: 0px;" class="clf-content-speed_summary tag_">El aire Acondicionado Portatil más</p>
+						<p data-aos=" zoom-in-down" data-aos-duration="1000" class="clf-content-speed_subtitle tag_ title-big"></p>
+					</div>
+					<div class="container container-custom " style="max-width: 900px;">
+
+						<div class="row adventure_feat" style="padding: 10px 0px 10px 0px;">
 							<div class="col-md-4 marginTop60" style="text-align: center;">
 								<img loading="lazy" class="clf-src-speed_image01 tag_" src="img/adventure_icon_2.svg" alt="" width="75" height="75">
 								<h3 class="clf-content-speed_item01 tag_" style="font-size: 1.5rem; font-weight: bold;"></h3>
@@ -314,69 +367,83 @@
 					<!-- /container -->
 				</div>
 
+
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/home/promo2.png" style="max-width: 100%;">
+					</div>
+				</div>
+
 				<div class="bg_color_1" id="reviews">
 					<div class="container margin_60_35">
 						<div class="main_title_2">
 							<h2 class="clf-content-tech_title tag_ title-big"></h2>
 							<p class="clf-content-tech_subtitle tag_ title-medium"></p>
 						</div>
-						<div class="add_top_15">
-							<div class="table-responsive" style="max-width: 800px; margin: auto;">
-								<table class="table table-condensed">
 
-									<tbody>
-										<tr>
-											<td class="clf-content-tech_text01 tag_ td-gray "></td>
-											<td class="clf-content-tech_text02 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text03 tag_ td-gray"></td>
-											<td class="clf-content-tech_text04 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text05 tag_ td-gray"></td>
-											<td class="clf-content-tech_text06 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text07 tag_ td-gray"></td>
-											<td class="clf-content-tech_text08 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text09 tag_ td-gray"></td>
-											<td class="clf-content-tech_text10 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text11 tag_ td-gray"></td>
-											<td class="clf-content-tech_text12 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text13 tag_ td-gray"></td>
-											<td class="clf-content-tech_text14 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text19 tag_ td-gray"></td>
-											<td class="clf-content-tech_text20 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text15 tag_ td-gray"></td>
-											<td class="clf-content-tech_text16 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text17 tag_ td-gray"></td>
-											<td class="clf-content-tech_text18 tag_"></td>
-										</tr>
-									</tbody>
-								</table>
+						<div class="row">
+
+							<div class="col-md-7">
+								<img src="img/home/colify2.webp" style="max-width: 100%;">
 							</div>
+							<div class="col-md-5">
+								<div class="table-responsive" style="max-width: 800px; margin: auto;">
+									<table class="table table-condensed" style="border: 2px solid #000">
+
+										<tbody>
+											<tr>
+												<td class="clf-content-tech_text01 tag_ td-gray "></td>
+												<td class="clf-content-tech_text02 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text03 tag_ td-gray"></td>
+												<td class="clf-content-tech_text04 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text05 tag_ td-gray"></td>
+												<td class="clf-content-tech_text06 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text07 tag_ td-gray"></td>
+												<td class="clf-content-tech_text08 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text09 tag_ td-gray"></td>
+												<td class="clf-content-tech_text10 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text11 tag_ td-gray"></td>
+												<td class="clf-content-tech_text12 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text13 tag_ td-gray"></td>
+												<td class="clf-content-tech_text14 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text19 tag_ td-gray"></td>
+												<td class="clf-content-tech_text20 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text15 tag_ td-gray"></td>
+												<td class="clf-content-tech_text16 tag_"></td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text17 tag_ td-gray"></td>
+												<td class="clf-content-tech_text18 tag_"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
 						</div>
 
 
-						<!-- /grid -->
 					</div>
 					<!-- /container -->
 				</div>
 
-				<div class="bg_color_1">
+				<div style="background-color:#000;" class="precauciones">
 					<div class="container margin_60_35">
 						<div class="row">
 							<div class="col-md-4">
@@ -401,250 +468,165 @@
 								</div>
 							</div>
 						</div>
-						<!-- /row  -->
-
-						<!--/container-->
 					</div>
+				</div>
+
+
+
+				<div class="row">
+					<div class="col-md-12">
+						<img src="img/home/promo3.png" style="max-width: 100%;">
+					</div>
+				</div>
+
+
+				<div style="background-color: #fff !important;">
 					<div class="container margin_60_35">
 						<div class="pricing-container cd-has-margins">
+
 							<div class="main_title_2">
-								<h2 class="clf-content-selectcolor_title tag_ title-big"></h2>
+								<h2 class="title-big" style=" font-size: 36px  !important;  background: #c1f6ff;
+								max-width: 700px;
+								margin: auto;">Selecciona el Coolify perfecto para ti</h2>
 								<p class="clf-content-selectcolor_subtitle tag_ title-medium"></p>
 							</div>
-							<div class="pricing-switcher">
-								<p class="fieldset">
-									<input type="radio" name="duration-2" value="monthly" id="monthly-2" checked="">
-									<label for="monthly-2">Negro</label>
-									<input type="radio" name="duration-2" value="yearly" id="yearly-2">
-									<label for="yearly-2">Blanco</label>
-									<span class="switch"></span>
-								</p>
-							</div>
-							<!--/pricing-switcher -->
-							<ul class="pricing-list bounce-invert">
-								<li>
-									<ul class="pricing-wrapper">
-										<li data-type="monthly" class="is-visible is-ended">
-											<img src="img/home/black.jpeg" style="max-width: 100%;">
-										</li>
-										<li data-type="yearly" class="is-hidden is-ended">
-											<img src="img/home/white.jpeg" style="max-width: 100%;">
-										</li>
-									</ul>
-									<!-- /pricing-wrapper -->
-								</li>
-								<li class="popular">
-									<ul class="pricing-wrapper">
 
-										<li data-type="monthly" class="is-visible is-ended" style="border: none">
-
-											<div style="padding: 10px; text-align: center; font-size: 24px; font-weight: bold;">
-												Cantidad: <input class="black-number" style="width: 90px; font-weight: bold; padding: 4px 10px; border-radius: 5px;" min="0" max="5">
-											</div>
-
-											<table class="table table-condensed">
-												<thead>
-													<tr>
-														<td><strong>Color</strong></td>
-														<td class="text-center"><strong>Precio</strong></td>
-														<td class="text-center"><strong>Cantidad</strong></td>
-														<td class="text-right"><strong>Totales</strong></td>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td> Negro</td>
-														<td class="text-center black-price">672.000</td>
-														<td class="text-center black-cantidad">0</td>
-														<td class="text-right black-total">0</td>
-													</tr>
-													<tr>
-														<td> Blanco</td>
-														<td class="text-center white-price">672.000</td>
-														<td class="text-center white-cantidad">0</td>
-														<td class="text-right white-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Subtotal</strong></td>
-														<td class="no-line text-right subtotal-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Shipping</strong></td>
-														<td class="no-line text-right shipping-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Descuento</strong></td>
-														<td class="no-line text-right descuento-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Total</strong></td>
-														<td class="no-line text-right total-total">0</td>
-													</tr>
-												</tbody>
-											</table>
-											<div style="padding: 30px 30px; text-align: center;">
-												<span><a href="#0" class="btn-cta" style="    padding: 10px 100px !important;
-													font-size: 20px;">Comprar</a></span>
-											</div>
-
-										</li>
-
-										<li data-type="yearly" class="is-hidden is-ended" style="border: none">
-
-											<div style="padding: 10px; text-align: center; font-size: 24px; font-weight: bold;">
-												Cantidad: <input class="white-number" style="width: 90px; font-weight: bold; padding: 4px 10px; border-radius: 5px;" min="0" max="5">
-											</div>
-
-											<table class="table table-condensed">
-												<thead>
-													<tr>
-														<td><strong>Color</strong></td>
-														<td class="text-center"><strong>Precio</strong></td>
-														<td class="text-center"><strong>Cantidad</strong></td>
-														<td class="text-right"><strong>Totales</strong></td>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td> Negro</td>
-														<td class="text-center black-price">672.000</td>
-														<td class="text-center black-cantidad">0</td>
-														<td class="text-right black-total">$10.99</td>
-													</tr>
-													<tr>
-														<td> Blanco</td>
-														<td class="text-center white-price">672.000</td>
-														<td class="text-center white-cantidad">0</td>
-														<td class="text-right white-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Subtotal</strong></td>
-														<td class="no-line text-right subtotal-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Shipping</strong></td>
-														<td class="no-line text-right shipping-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Descuento</strong></td>
-														<td class="no-line text-right descuento-total">0</td>
-													</tr>
-													<tr>
-														<td class="no-line"></td>
-														<td class="no-line"></td>
-														<td class="no-line text-center"><strong>Total</strong></td>
-														<td class="no-line text-right total-total">0</td>
-													</tr>
-												</tbody>
-											</table>
-											<div style="padding: 30px 30px; text-align: center;">
-												<span><a href="#0" class="btn-cta" style="    padding: 10px 100px !important;
-													font-size: 20px;">Comprar</a></span>
-											</div>
-										</li>
-
-									</ul>
-									<!-- /cd-pricing-wrapper -->
-								</li>
-
-							</ul>
-							<!-- /pricing-list -->
-						</div>
-						<!-- /pricing-container -->
-					</div>
-
-					<div class="bg_color_1">
-						<div class="container margin_80_55">
-							<div class="main_title_2">
-								<h2 class="clf-content-whoweare_title tag_"></h2>
-								<p class="clf-content-whoweare_subtitle tag_"></p>
-							</div>
-							<div class="row justify-content-between">
-								<div class="col-lg-6 wow animated" data-wow-offset="150" style="visibility: visible;">
-									<figure class="block-reveal">
-										<div class="block-horizzontal"></div>
-										<img class="clf-src-whoweare_image01 tag_" class="img-fluid" alt="">
-									</figure>
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<div style="padding: 10px; text-align: center; font-size: 18px; font-weight: bold; border: 1px solid black; max-width: 200px; float:right">
+										Negro &nbsp;&nbsp;&nbsp;X<input class="white-number price-input" min="0" max="5">
+									</div>
 								</div>
-								<div class="col-lg-5">
-									<div class="clf-content-whoweare_summary tag_">
-
+								<div class="col-lg-6 col-md-6" style="text-align: center;">
+									<div style="padding: 10px; text-align: center; font-size: 18px; font-weight: bold;  border: 1px solid black;  max-width: 200px; ">
+										Blanco &nbsp;&nbsp;&nbsp;X<input class="black-number price-input" min="0" max="5">
 									</div>
 								</div>
 							</div>
-							<!--/row-->
-						</div>
-						<!--/container-->
-					</div>
 
+							<br><br>
+
+							<table class="table table-condensed" style=" font-size: 18px;">
+								<thead>
+									<tr style="font-size: 22px;">
+										<td><strong>Color</strong></td>
+										<td class="text-center"><strong>Precio</strong></td>
+										<td class="text-center"><strong>Cantidad</strong></td>
+										<td class="text-right"><strong>Totales</strong></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="font-size: 20px;">
+											<div class="circle-white"></div>
+											Blanco
+										</td>
+										<td class="text-center black-price">672.000</td>
+										<td class="text-center black-cantidad">0</td>
+										<td class="text-right black-total">$10.99</td>
+									</tr>
+									<tr>
+										<td style="font-size: 20px;">
+											<div class="circle-black"></div>
+											Negro
+										</td>
+
+
+										<td class="text-center white-price">672.000</td>
+										<td class="text-center white-cantidad">0</td>
+										<td class="text-right white-total">0</td>
+									</tr>
+									<tr>
+										<td class="no-line"></td>
+										<td class="no-line"></td>
+										<td class="no-line text-center"><strong>Subtotal</strong></td>
+										<td class="no-line text-right subtotal-total">0</td>
+									</tr>
+									<tr>
+										<td class="no-line"></td>
+										<td class="no-line"></td>
+										<td class="no-line text-center"><strong>Shipping</strong></td>
+										<td class="no-line text-right shipping-total">0</td>
+									</tr>
+									<tr>
+										<td class="no-line"></td>
+										<td class="no-line"> <span style="border: 1px solid black; padding: 3px  10px;"> Promo code</span><b></b></td>
+										<td class="no-line text-center"><strong>Descuento</strong></td>
+										<td class="no-line text-right descuento-total">0</td>
+									</tr>
+									<tr>
+										<td class="no-line"></td>
+										<td class="no-line"></td>
+										<td class="no-line text-center" style="font-size: 24px;"><strong>Total</strong></td>
+										<td class="no-line text-right total-total" style="font-size: 24px; font-weight: bold;">233.000</td>
+									</tr>
+								</tbody>
+							</table>
+							<div style="padding: 30px 30px; text-align: center;">
+								<span><a href="#0" class="btn-cta" style="    padding: 10px 100px !important;
+									font-size: 20px; font-weight: bold;">Comprar</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="bg_color_1">
 					<div class="container margin_80_55">
 						<div class="main_title_2">
-							<h2>Ofrecemos</h2>
+							<h2 class="clf-content-whoweare_title tag_ title-01"></h2>
+							<p class="clf-content-whoweare_subtitle tag_ subtitle-01"></p>
 						</div>
-						<div class="row">
-							<div class="col-lg-4 col-md-6">
-								<a class="box_feat" href="#0">
-									<i class="pe-7s-medal"></i>
-									<h3>+ 1000 Customers</h3>
-									<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-								</a>
+						<div class="row justify-content-between">
+							<div class="col-lg-6 wow animated" data-wow-offset="150" style="visibility: visible;">
+								<figure class="block-reveal">
+									<div class="block-horizzontal"></div>
+									<img class="clf-src-whoweare_image01 tag_" class="img-fluid" alt="">
+								</figure>
 							</div>
-							<div class="col-lg-4 col-md-6">
-								<a class="box_feat" href="#0">
-									<i class="pe-7s-help2"></i>
-									<h3>H24 Support</h3>
-									<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
-								</a>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<a class="box_feat" href="#0">
-									<i class="pe-7s-culture"></i>
-									<h3>+ 575 Locations</h3>
-									<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-								</a>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<a class="box_feat" href="#0">
-									<i class="pe-7s-headphones"></i>
-									<h3>Help Direct Line</h3>
-									<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
-								</a>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<a class="box_feat" href="#0">
-									<i class="pe-7s-credit"></i>
-									<h3>Secure Payments</h3>
-									<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-								</a>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<a class="box_feat" href="#0">
-									<i class="pe-7s-chat"></i>
-									<h3>Support via Chat</h3>
-									<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
-								</a>
+							<div class="col-lg-5">
+								<div class="clf-content-whoweare_summary tag_" style="font-size: 18px; line-height: 32px;">
+
+								</div>
 							</div>
 						</div>
-						<!--/row-->
 					</div>
+				</div>
+
+				<div class="container margin_80_55">
+					<div class="row">
+
+						<div class="col-lg-4 col-md-6">
+							<a class="box_feat" href="#0">
+								<i class="pe-7s-help2"></i>
+								<h3>H24 Support</h3>
+								<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<a class="box_feat" href="#0">
+								<i class="pe-7s-culture"></i>
+								<h3>+ 575 Locations</h3>
+								<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
+							</a>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a class="box_feat" href="#0">
+								<i class="pe-7s-credit"></i>
+								<h3>Secure Payments</h3>
+								<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
+							</a>
+						</div>
+
+					</div>
+					<!--/row-->
+				</div>
 
 
 
-					<!--
+				<!--
 <div class="container margin_60_35">
 						<div class="main_title_2">
 							<h2 class="clf-content-gallery_title tag_ title-big"></h2>
@@ -669,7 +651,7 @@
 						
 						</div>
 						-->
-				</div>
+
 
 				<section>
 					<img loading="lazy" width="100%" src="img/home/family.png">

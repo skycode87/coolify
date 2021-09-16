@@ -6135,12 +6135,31 @@ a.grid_item.latest_adventure em {
 }
 
 .adventure_feat h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-top: 20px;
-  max-width: 300px;
+  max-width: 600px;
   margin: auto;
   line-height: 32px;
   margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mini-items h3 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  line-height: 32px;
+  margin-top: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.mini-items img {
+ margin-right: 5px;
+ position: relative;
+ top: -2px;
 }
 
 .hero_in.adventure_detail {
@@ -9439,16 +9458,79 @@ ul.plan-features {
 
 .features h3{
   color: #fff; 
-  font-size: 32px !important;
+  font-size: 24px !important;
+  text-align: center;
+  letter-spacing: 1.5px;
+  max-width: 400px;
+  margin: auto !important;
+  margin-bottom: 20px !important;
+}
+
+.features img{
+ width: 300px !important;
+ display: block !important;
+ margin: auto !important;
 }
 
 .features p{
-  max-width: 500px;
-  line-height: 32px;
-  font-size: 18px
+  max-width: 400px !important;
+  line-height: 22px;
+  font-size: 15px;
+  text-align: center;
+  margin: auto !important;
+}
+
+.precauciones h4{
+  color: #fff;
+}
+
+.precauciones p{
+  color: #fff;
 }
 
 .td-gray{
-  font-weight: bold !important;
-  background-color: #fcfcfc !important;
+  font-weight: 500 !important;
+  background-color: gray !important;
+  color: #fff;
+}
+
+input.price-input{
+  width: 60px;
+  font-weight: bold;
+  padding: 0px 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid #808080;
+  background: #faebd7;
+  text-align: center;
+  color: #575757;
+  margin-left: 20px;
+}
+
+.circle-black{
+  width: 20px;
+    height: 20px;
+    background: #000;
+    float: left;
+    position: relative;
+    left: -10px;
+    top: 1px;
+    border-radius: 50%;
+}
+
+.circle-white{
+  width: 20px;
+    height: 20px;
+    background: #fff;
+    float: left;
+    position: relative;
+    left: -10px;
+    border: 1px solid #000;
+    top: 1px;
+    border-radius: 50%;
+}
+
+.title-01{
+  font-size: 52px;
+    font-weight: bold;
 }
