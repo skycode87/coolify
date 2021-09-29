@@ -105,7 +105,7 @@ Author URI: http://themeforest.net/user/Ansonika/
   }
 
   header.sticky .main-menu > ul > li span > a {
-    color: #444;
+    color: #fff;
   }
   header.sticky .main-menu > ul > li span:hover > a {
     opacity: 1;
@@ -163,7 +163,7 @@ Author URI: http://themeforest.net/user/Ansonika/
     font-size: 12px;
     font-size: 0.75rem;
     font-weight: 500;
-    color: #555;
+    color: #fff;
     border-bottom: 1px solid #ededed;
     display: block;
     padding: 15px 10px;
@@ -9453,7 +9453,7 @@ ul.plan-features {
 .features{
   background-color: #000; 
   color: #fff; 
-  padding: 100px 0px;
+  padding: 100px 0px 0px;
 }
 
 .features h3{
@@ -9471,6 +9471,23 @@ ul.plan-features {
  display: block !important;
  margin: auto !important;
 }
+
+.features .chica img.chica{
+  width: 800px !important;
+  display: block !important;
+}
+
+.features .chica h3{
+  color: #fff; 
+  font-size: 62px !important;
+  text-align: center;
+}
+
+.features .chica h3 .big{
+  font-size: 82px !important;
+}
+
+
 
 .features p{
   max-width: 400px !important;
@@ -9533,4 +9550,13 @@ input.price-input{
 .title-01{
   font-size: 52px;
     font-weight: bold;
+}
+
+.color-frio{
+  color:  #28AFE7 !important;
+}
+
+.background-frio{
+  background:  #28AFE7 !important;
+
 }
