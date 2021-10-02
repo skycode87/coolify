@@ -6091,13 +6091,51 @@ a.grid_item.latest_adventure em {
   margin-bottom: 60px;
   position: relative;
 }
+
+
+.banner {
+  background-size: contain !important;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  width: 100%;
+  height: 420px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.banner1 {
+  background: url(../img/version3/office_desktop.jpg) center center no-repeat;
+}
+
+.banner2 {
+  background: url(../img/version3/golf_desktop.jpg) center center no-repeat;
+}
+
+
+.banner3 {
+  background: url(../img/version3/adventure.jpg) center center no-repeat;
+}
+
+
+.banner4 {
+  background: url(../img/version3/office_mobile.jpg) center center no-repeat;
+}
 @media (max-width: 767px) {
-  .banner {
+
+  .banner1 {
+    background: url(../img/version3/office_mobile.jpg) center center no-repeat;
+  
+  }
+
+  .banner2 {
+    background: url(../img/version3/golf_mobile.webp) center center no-repeat;
+  }
+
+  .banner3 {
+    background: url(../img/version3/adventure_mobile.webp) center center no-repeat;
+  }
+  .banner4 {
     background: url(../img/banner_bg_mobile.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
   }
 }
 .banner .wrapper {
@@ -9558,5 +9596,35 @@ input.price-input{
 
 .background-frio{
   background:  #28AFE7 !important;
+}
 
+
+
+.border-frio{
+  border-color:  #28AFE7 !important;
+}
+
+.border-selected{
+  transform: scale(1.3);
+  border:  6px solid #28AFE7  !important;
+}
+
+.box-payment{
+  border: 2px solid #f8f8f8;
+							background: #fff;
+  text-align: center;
+    background: #fff;
+    padding: 40px 30px 30px 30px;
+    display: block;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    -webkit-box-shadow: 0px 3px 0px 0px #f0f2f4;
+    -moz-box-shadow: 0px 3px 0px 0px #f0f2f4;
+    box-shadow: 0px 3px 0px 0px #f0f2f4;
+    color: #555;
+    margin-bottom: 30px;
+    border-radius: 7px;
 }

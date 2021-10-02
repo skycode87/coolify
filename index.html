@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Panagea - Premium site template for travel agencies, hotels and restaurant listing.">
 		<meta name="author" content="Ansonika">
-		<title>Coolify</title>
+		<title>CoolProducts| Expertos en Tecnología</title>
 
 		<!-- Favicons-->
 		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,26 +16,24 @@
 		<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<!--	<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">-->
+		<!-- GOOGLE WEB FONT -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="/fonts/stylesheet.css" type="text/css" charset="utf-8" />
 
 		<!-- BASE CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/aos.css" rel="stylesheet">
-		<!-- SPECIFIC CSS -->
-		<link href="css/tables.css" rel="stylesheet">
-
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/vendors.css" rel="stylesheet">
+		<link href="css/aos.css" rel="stylesheet">
 
-
+		<!-- YOUR CUSTOM CSS -->
+		<link href="css/custom.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/fonts/stylesheet.css" type="text/css" charset="utf-8" />
 
 		<style>
 			body {
-				font-family: 'aspace_lightregular' !important;
+				font-family: "Poppins", Helvetica, sans-serif !important;
 			}
 
 			h1,
@@ -43,73 +41,33 @@
 			h3,
 			h4 {
 				font-family: 'aspace_lightregular' !important;
+				font-weight: bold;
+				letter-spacing: 1px;
 			}
 
-			p {
-				font-family: 'aspace_lightregular' !important;
-				/*font-family: "Poppins", Helvetica, sans-serif !important;*/
-			}
-
-			.call_section.adventure {
-				background: url(img/home/coolify02.webp) center center no-repeat fixed;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
-
-
-			.call_section.adventure2 {
-				background: url(img/home/banner.jpeg) center center no-repeat fixed;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
-
-
-			.bannerHover {
-				min-height: 800px;
-				background: url(img/home/coolifyBlack.png) center center no-repeat;
-			}
-
-
-			.bannerHover:hover {
-				background: url(img/home/coolifyWhite.png) center center no-repeat;
-				min-height: 800px;
-
-			}
-
-
-			.marginTop60 {
-				margin-top: 50px;
-			}
-
-			.marginTop60 {
-				margin-top: 60px;
+			p,
+			a {
+				font-family: "Poppins", Helvetica, sans-serif !important;
 			}
 		</style>
-
-		<!-- YOUR CUSTOM CSS -->
-		<link href="css/custom.css" rel="stylesheet">
-
-		<!-- Modernizr -->
-		<script src="js/modernizr.js"></script>
-
-
-
 	</head>
 
-	<body>
+	<body class="datepicker_mobile_full">
+		<!-- Remove this class to disable datepicker full on mobile -->
 
 		<div id="page">
-			<header class="header menu_fixed">
+
+			<header class="header menu_fixed" style="background: #000;">
 				<div id="preloader">
 					<div data-loader="circle-side"></div>
 				</div><!-- /Page Preload -->
 				<div id="logo">
-					<h2 style="font-weight: bold;"><img src="/img/logo2.png" width="300px" height="60px"></h2>
+					<h3 style="color: #fff;">
+						Cool Products
+						<span class="noDesktop btn-comprar-logo">Comprar ahora </span>
+					</h3>
 				</div>
+
 				<!-- /top_menu -->
 				<a href="#menu" class="btn_mobile">
 					<div class="hamburger hamburger--spin" id="hamburger">
@@ -120,11 +78,10 @@
 				</a>
 				<nav id="menu" class="main-menu">
 					<ul>
-						<li><span><a href="#inicio" style="color: #000">Inicio</a></span></li>
-						<li><span><a href="#caracteristicas" style="color: #000">Caracteristicas</a></span></li>
-						<li><span><a href="#video" style="color: #000">Video</a></span></li>
-						<li><span><a href="#reviews" style="color: #000">Reviews</a></span></li>
-						<li><span><a href="#0" class="btn-cta" style="letter-spacing: 1px "><b>Comprar ahora</b></a></span></li>
+						<li><span><a href="#0">Quienes somos</a></span></li>
+						<li><span><a href="#0">Características Técnicas </a></span></li>
+						<li><span><a style="font-weight: bold; color: #fc5b62;" href="#0">COMPRAR CON 10%</a></span></li>
+
 					</ul>
 				</nav>
 			</header>
@@ -132,13 +89,12 @@
 
 			<main>
 
-				<section>
-					<video loading="lazy" width="100%" height="auto" autoplay muted style="margin: auto; display: block;" loop>
+				<section style="margin-top: 50px;">
+					<video loading="lazy" width="100%" height="auto" autoplay muted style="margin: auto; display: block; max-width: 1000px;" loop>
 						<source src="video/coolifyIntro.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
 				</section>
-
 
 				<section id="video">
 					<video loading="lazy" width="100%" autoplay muted style="margin: auto; display: block;" loop>
@@ -147,51 +103,89 @@
 					</video>
 				</section>
 
-
-				<div style="max-width: 1100px; margin: auto; position: relative;" data-aos="zoom-in-down" data-aos-duration="2500">
-					<img src="/img/home/oficina.png" style="max-width: 100%">
-				</div>
-
-				<div style="max-width: 1100px; margin: auto; position: relative;" data-aos="zoom-in-down" data-aos-duration="1500">
-					<img src="/img/home/aventura.png" style="max-width: 100%">
-				</div>
-
-				<div style="max-width: 1100px; margin: auto; position: relative;" data-aos="zoom-in-down" data-aos-duration="2000">
-					<img src="/img/home/deporte.png" style="max-width: 100%">
-				</div>
-
-
-				<div style="max-width: 1100px; margin: auto; position: relative; padding: 150px 10px;" data-aos="zoom-in-down" data-aos-duration="2000">
-					<div class="row">
-						<div class="col-md-8">
-							<img src="img/home/coolify2.png" style="max-width: 100%; ">
+				<div class="bg_color_1" id="inicio">
+					<div class="container container-custom margin_80_55">
+						<div class="main_title_2">
+							<h2 style="font-weight: bold; font-size: 62px !important;" data-aos="zoom-in-down" data-aos-duration="800"
+								class="clf-content-main_title tag_ title-medium aos-init aos-animate">
+								COOLIFY</h2>
+							<p data-aos="zoom-in-down" data-aos-duration="900" style="margin: 0px;" class="clf-content-main_summary tag_ aos-init aos-animate">Un Aire Acondicionado Portable</p>
+							<h3 data-aos="zoom-in-down" data-aos-duration="1000" class="tag_ title-big aos-init aos-animate">Calidad &nbsp;&nbsp; Frescura &nbsp;&nbsp;Comodidad</h3>
 						</div>
-						<div class="col-md-4">
 
-							<img src="img/home/relog.gif" style="max-width: 100%;  width:350px" data-aos="zoom-in-down" data-aos-duration="2000">
+					</div>
+					<!-- /container -->
+				</div>
 
-							<h3 style="max-width: 300px; text-align: center; margin: auto; display: block; margin-top: 40px; line-height: 38px; font-size: 28px;" data-aos="zoom-in-down"
+				<section style=" padding: 30px 10px !important">
+					<div class="banner banner1 mb-0" style="max-width: 1100px; margin: auto;">
+						<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="#f4d74f36" style="background-color: rgba(0, 0, 0, 0.3);">
+							<div>
+								<small style="color: #000;">En la oficina</small>
+								<h3 style="color: #000;">Perfecto<br>Advenure Experience</h3>
+								<p style="color: #000;">Activities and accommodations</p>
+								<a data-video-url="/video/office.mp4" href="adventure.html" class="btn_1 js-modal-btn background-frio">Ver video</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section style=" padding: 30px 10px  10px!important">
+					<div class="banner  banner2 mb-0" style="max-width: 1100px; margin: auto;">
+						<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="#f4d74f36" style="background-color: rgba(0, 0, 0, 0.3);">
+							<div>
+								<small style="color: #000;">Adventure</small>
+								<h3 style="color: #000;">Your Perfect<br>Advenure Experience</h3>
+								<p style="color: #000;">Activities and accommodations</p>
+								<a data-video-url="/video/golf.mp4" href="adventure.html" class="btn_1 js-modal-btn background-frio">Ver video</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section style=" padding: 30px 10px  10px!important">
+					<div class="banner  banner3 mb-0" style="max-width: 1100px; margin: auto;">
+						<div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="#f4d74f36" style="background-color: rgba(0, 0, 0, 0.3);">
+							<div>
+								<small style="color: #000;">Adventure</small>
+								<h3 style="color: #000;">Your Perfect<br>Advenure Experience</h3>
+								<p style="color: #000;">Activities and accommodations</p>
+								<a data-video-url="/video/adventure2.mp4" href="adventure.html" class="btn_1 js-modal-btn background-frio">Ver video</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<div style="max-width: 1100px; margin: auto; position: relative; padding: 50px 10px;" data-aos="zoom-in-down" data-aos-duration="2000">
+					<div class="row">
+						<div class="col-md-6 no-mobile">
+							<img src="img/version3/realx.jpg" style="max-width: 100%; margin: auto;"">
+						</div>
+						<div class=" col-md-6">
+
+							<img src="img/home/relog.gif" style="max-width: 100%; margin: auto; width:100%; " data-aos="zoom-in-down" data-aos-duration="2000">
+
+							<p style="max-width: 350px; text-align: center; margin: auto; display: block; margin-top: 20px; line-height: 38px; font-size: 32px;" data-aos="zoom-in-down"
 								data-aos-duration="2000">
-								Baja la temperatura <br> de <span class="color-frio" style="font-weight: bold;">32°</span> a <span style="color: red;font-weight: bold;">18°</span> grados <br> en 3
-								segundos
-							</h3>
+								Baja la temperatura <br> de <span class="color-frio" style="font-weight: bold; font-size: 42px;">32°</span> a <span
+									style="color: red;font-weight: bold; font-size: 42px;">18°</span>
+								grados <br> <b>en 3
+									segundos</b>
+							</p>
 
 							<p style="max-width: 300px; text-align: center; margin: auto; display: block; margin-top: 20px; line-height: 28px; font-size: 16px; font-weight: bold;"
 								data-aos="zoom-in-down" data-aos-duration="1200">
-								Cientificamente comprodado
-								<br><br><br>
-								<a class="js-modal-btn background-frio" data-video-url="/video/review.mp4"
-									style="font-size: 22px; font-weight: bold; color: #fff; padding: 10px 60px; border-radius: 5px;  font-weight: bold; position: relative; top: -20px; cursor: pointer;">Ver
-									más</a>
-							</p>
+
+								<a data-video-url="/video/funcina.mp4" href="#!" class="btn_1 js-modal-btn background-frio">Ver video review</a>
+
 						</div>
 					</div>
 				</div>
 
 
-
-
-				<section class="features" id="caracteristicas">
+				<section class="features no-mobile" id="caracteristicas">
 					<div class=" main_title_3" style="text-align:center; max-width: 1200px; margin: auto;">
 						<p style="max-width: 900px; margin: auto; font-size: 22px !important; line-height: 36px;" data-aos="zoom-in-down" data-aos-duration="1600"
 							class="clf-content-main_features_subtitle tag_ title-medium"></p>
@@ -243,7 +237,7 @@
 						</div>
 
 
-						<div class="col-xl-6 col-lg-6 col-md-6" style="margin-top: 100px;">
+						<div class="col-xl-6 col-lg-6 col-md-6 " style="margin-top: 100px;">
 							<a href="#!" class="grid_item latest_adventure">
 								<figure>
 									<img loading="lazy" class="clf-src-main_featureimage01 tag_" src="img/adventure_latest_1.jpg" class="img-fluid" alt="">
@@ -259,7 +253,7 @@
 						</div>
 
 
-						<div class="col-xl-6 col-lg-6 col-md-6" style="margin-top: 100px;">
+						<div class="col-xl-6 col-lg-6 col-md-6 no-mobile" style="margin-top: 100px;">
 							<a href="#!" class="grid_item latest_adventure">
 								<figure>
 									<img loading="lazy" class="clf-src-main_featureimage04 tag_" src="img/adventure_latest_1.jpg" class="img-fluid" alt="">
@@ -274,7 +268,7 @@
 						</div>
 
 
-						<div class="col-xl-6 col-lg-6 col-md-6" style="margin-top: 100px;">
+						<div class="col-xl-6 col-lg-6 col-md-6 no-mobile" style="margin-top: 100px;">
 							<a href="#!" class="grid_item latest_adventure">
 								<figure>
 									<img loading="lazy" class="clf-src-main_featureimage06 tag_" src="img/adventure_latest_1.jpg" class="img-fluid" alt="">
@@ -302,6 +296,151 @@
 					</div>
 				</section>
 
+				<!-- 
+<div class="col-md-6">
+								<div class="table-responsive" style="max-width: 800px; margin: auto;">
+									<table class="table table-condensed" style="border: 2px solid #000">
+
+										<tbody>
+											<tr>
+												<td class="clf-content-tech_text01 tag_ td-gray ">Dimensiones del paquete</td>
+												<td class="clf-content-tech_text02 tag_">10.35 x 9.02 x 4.49 pulgadas</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text03 tag_ td-gray">Peso del producto</td>
+												<td class="clf-content-tech_text04 tag_">138Gramos</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text05 tag_ td-gray">Fabricante</td>
+												<td class="clf-content-tech_text06 tag_">TORRAS</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text07 tag_ td-gray">ASIN</td>
+												<td class="clf-content-tech_text08 tag_">B08X4X74GR</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text09 tag_ td-gray">Número de modelo del producto </td>
+												<td class="clf-content-tech_text10 tag_">FSFA20</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text11 tag_ td-gray">Caracteristicas de la Bateria</td>
+												<td class="clf-content-tech_text12 tag_">2 Baterias Polímero de litio necesaria(s), incluida(s)</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text13 tag_ td-gray">Duración de la bateria</td>
+												<td class="clf-content-tech_text14 tag_">8 Horas</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text19 tag_ td-gray">Garantía del producto</td>
+												<td class="clf-content-tech_text20 tag_">6 Meses de Garantía</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text15 tag_ td-gray">Diseño seguro sin aspas</td>
+												<td class="clf-content-tech_text16 tag_">No ocasiona accidentes con el cabello largo</td>
+											</tr>
+											<tr>
+												<td class="clf-content-tech_text17 tag_ td-gray">Garantia del Producto</td>
+												<td class="clf-content-tech_text18 tag_">6 Meses de Garantía</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+
+				-->
+
+				<div class="bg_color_1" id="reviews">
+					<div class="container margin_60_35">
+						<div class="main_title_2" data-aos="zoom-in-down" data-aos-duration="1400">
+							<h2 class="clf-content-tech_title tag_ title-big">Especificaciones</h2>
+							<p class="clf-content-tech_subtitle tag_ title-medium">Técnicas</p>
+						</div>
+
+						<div class="row" style="margin-bottom: 30px;">
+
+
+							<div class="col-md-12" style="text-align: center;">
+								<img class="btn-white" onClick="whiteSelected()" style="cursor: pointer;  border-radius: 7px; max-width: 120px; margin: auto;" src="img/version3/white.jpeg">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="btn-black" onClick="blackSelected()"
+									style="border: 2px solid ; cursor: pointer; border-radius: 7px; max-width:  120px; margin: auto;" src="img/version3/black.jpeg">
+							</div>
+							<div class="col-md-12" style="text-align: center; padding: 40px 10px 20px;">
+
+								<a style="text-align: center; color: #000" href="#!">Seleccione un color</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<img class="image-black" style="width: 100%; margin: auto;" src="img/version3/black/complete.png">
+								<img class="image-black" style="width: 100%; margin: auto;" src="img/version3/black/bottom.jpg">
+								<img class="image-white" style="width: 100%; margin: auto;" src="img/version3/white/complete.png">
+								<img class="image-white" style="width: 100%; margin: auto;" src="img/version3/white/bottom.jpg">
+							</div>
+						</div>
+
+					</div>
+					<!-- /container -->
+				</div>
+
+				<div class="bg_color_1">
+					<div class="container margin_80_55">
+						<div class="main_title_2">
+							<span><em></em></span>
+							<h2>Our Origins and Story</h2>
+							<p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+						</div>
+						<div class="row justify-content-between">
+							<div class="col-lg-3">
+								<div class="list_articles add_bottom_30 clearfix">
+									<h5>Coolify</h5>
+									<ul>
+										<li><img src="img/version3/check.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/check.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/check.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/check.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/check.png" width="30px" /> dicit vidisse epicurei pri</li>
+
+									</ul>
+								</div>
+								<style>
+									.list_articles ul li {
+
+										width: 100% !important;
+									}
+								</style>
+							</div>
+							<div class="col-lg-6 wow animated no-mobile" data-wow-offset="150" style="visibility: visible;">
+								<figure class="block-reveal">
+									<div class="block-horizzontal"></div>
+									<img src="img/version3/vs.png" class="img-fluid" alt="" data-aos="zoom-in-down" data-aos-duration="1200">
+								</figure>
+							</div>
+							<div class="col-lg-3">
+								<div class="list_articles add_bottom_30 clearfix">
+									<h5>Otros productos</h5>
+									<ul>
+										<li><img src="img/version3/nocheck.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/nocheck.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/nocheck.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/nocheck.png" width="30px" /> dicit vidisse epicurei pri</li>
+										<li><img src="img/version3/nocheck.png" width="30px" /> dicit vidisse epicurei pri</li>
+
+									</ul>
+								</div>
+								<style>
+									.list_articles ul li {
+
+										width: 100% !important;
+									}
+								</style>
+							</div>
+						</div>
+						<!--/row-->
+					</div>
+					<!--/container-->
+				</div>
+
+
 				<section>
 					<video loading="lazy" width="100%" height="auto" autoplay muted style="margin: auto; display: block;" loop>
 						<source src="video/satisfaccion.mp4" type="video/mp4">
@@ -309,604 +448,145 @@
 					</video>
 				</section>
 
+				<div class="container margin_80_55">
+					<div class="main_title_2">
+						<span><em></em></span>
 
-				<div class="bg_color_1" id="reviews" style="background: rgb(42,42,49);
-				background: linear-gradient(180deg, rgba(42,42,49,1) 52%, rgb(22 66 141) 100%)">
-					<div class="container margin_60_35" style="max-width: 1100px; margin: auto;"">
-						<div class=" main_title_2">
-						<h2 style="color: #fff;" class="clf-content-tech_title tag_ title-big"></h2>
-						<p style="color: #fff;" class="clf-content-tech_subtitle tag_ title-medium"></p>
+						<h2><b>Cool Products</b></h2>
+						<p>Te garantiza la calidad y efectividad del Coolify<br>
+							<small>Somos distribuidores autorizados en todo Colombia</small>
+						</p>
 					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12">
 
-					<div class="row" style="width: 1100px; margin: auto;">
+							<div class="box-payment">
+								<p><b>Adquiere el tuyo con toda confiabilidad y seguridad. </b> <br>Para ordenar estas son nuestras formas de pago</p>
+								<img src="img/version3/pagos.png" style="max-width: 400px;">
+								<br> <br>
+								<p>
+									<a data-video-url="/video/review.mp4" href="#!" class="btn_1 js-modal-btn "
+										style="background-color: #fc5b62; padding: 30px 100px; font-size: 24px; font-weight: bold;">Comprar
+										Ahora</a>
+								</p>
 
-						<div class="col-md-6">
-
-							<img src="/img/home/white.jpeg" style="cursor: pointer; max-width: 400px; border: 3px solid #000; border-radius: 10px; margin: auto; display: block;">
-							<h3 style="margin: auto; display: block; border-radius: 10px; text-align: center;margin-top: 20px; color: #000; background: #fff; max-width: 200px; ">Blanco</h3>
-						</div>
-						<div class="col-md-6">
-
-
-							<img src="/img/home/black.jpeg" style="cursor: pointer; max-width: 400px; border: 3px solid #000;  border-radius: 10px; margin: auto;  display: block;">
-							<h3 style="margin: auto; display: block; border-radius: 10px; text-align: center;margin-top: 20px; color: #000; background: #fff; max-width: 200px; ">Negro</h3>
-						</div>
-
-					</div>
-
-					<div class="row" style="width: 900px; margin: auto;">
-
-						<div class="col-md-12">
-							<div class="table-responsive" style="max-width: 800px; margin: auto; margin-top: 70px;">
-								<table class="table table-condensed" style="border: 3px solid #000; background: #fff;">
-
-									<tbody>
-										<tr>
-											<td class="clf-content-tech_text01 tag_ td-gray "></td>
-											<td class="clf-content-tech_text02 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text03 tag_ td-gray"></td>
-											<td class="clf-content-tech_text04 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text05 tag_ td-gray"></td>
-											<td class="clf-content-tech_text06 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text07 tag_ td-gray"></td>
-											<td class="clf-content-tech_text08 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text09 tag_ td-gray"></td>
-											<td class="clf-content-tech_text10 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text11 tag_ td-gray"></td>
-											<td class="clf-content-tech_text12 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text13 tag_ td-gray"></td>
-											<td class="clf-content-tech_text14 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text19 tag_ td-gray"></td>
-											<td class="clf-content-tech_text20 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text15 tag_ td-gray"></td>
-											<td class="clf-content-tech_text16 tag_"></td>
-										</tr>
-										<tr>
-											<td class="clf-content-tech_text17 tag_ td-gray"></td>
-											<td class="clf-content-tech_text18 tag_"></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-
-					</div>
-
-
-				</div>
-
-		</div>
-		<div style="background-color: #16428C;">
-			<div style="max-width: 1100px; margin: auto; position: relative; ">
-				<img src="/img/home/coolifyBlack.png" style="max-width: 100%; width: 100%;">
-			</div>
-		</div>
-
-
-
-		<div class="bg_color_1">
-			<div class="container margin_80_55">
-				<div class="main_title_2" style="border: 2px solid rgb(129, 129, 129); max-width: 800px; margin: auto; border-radius: 10px; padding: 20px 40px;  ">
-					<h2 class="title-01" style="font-size: 18px !important;">
-						Para ordenar estas son nuestras formas de pago
-					</h2><br>
-					<img src="/img/home/pagos.png" style="max-width: 400px;">
-
-					<p style="max-width: 400px; text-align: center; margin: auto; display: block; margin-top: 20px; line-height: 28px; font-size: 18px;" data-aos="zoom-in-down"><br>
-						<a class="background-frio" style="font-size: 22px; font-weight: bold; color: #fff; padding: 5px 30px; border-radius: 5px; position: relative; top: -20px; cursor: pointer;">
-							Comprar ahora
-						</a>
-					</p>
-
-
-				</div>
-
-			</div>
-		</div>
-		</div>
-
-		<div class="container margin_80_55">
-			<div class="row">
-
-				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
-						<i class="pe-7s-help2"></i>
-						<h3>H24 Support</h3>
-						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
-						<i class="pe-7s-culture"></i>
-						<h3>+ 575 Locations</h3>
-						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
-						<i class="pe-7s-credit"></i>
-						<h3>Secure Payments</h3>
-						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
-						<i class="pe-7s-help2"></i>
-						<h3>H24 Support</h3>
-						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
-					</a>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
-						<i class="pe-7s-culture"></i>
-						<h3>+ 575 Locations</h3>
-						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-6">
-					<a class="box_feat" href="#0">
-						<i class="pe-7s-credit"></i>
-						<h3>Secure Payments</h3>
-						<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
-					</a>
-				</div>
-
-			</div>
-			<!--/row-->
-		</div>
-
-
-
-		<!--
-<div class="container margin_60_35">
-						<div class="main_title_2">
-							<h2 class="clf-content-gallery_title tag_ title-big"></h2>
-							<p class="clf-content-gallery_subtitle tag_ title-medium"></p>
-						</div>
-					</div>
-				
-
-					<div class="bg_color_1" id="reviews">
-						<div class="container margin_60_35">
-							<div class="main_title_2">
-								<h2 class="clf-content-videogallery_title tag_ title-big"></h2>
-								<p class="clf-content-videogallery_subtitle tag_ title-medium"></p>
 							</div>
 
 
-							<div class="grid">
-								<iframe style="margin: auto; display: block;" width="800px" height="600px" src=" https://www.youtube.com/embed/QJcQNBkF1C0" title="YouTube video player" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+
+						<div class="col-lg-4 col-md-6">
+							<a class="box_feat" href="#0">
+								<i class="pe-7s-headphones"></i>
+								<h3>Help Direct Line</h3>
+								<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<a class="box_feat" href="#0">
+								<i class="pe-7s-credit"></i>
+								<h3>Secure Payments</h3>
+								<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris.</p>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<a class="box_feat" href="#0">
+								<i class="pe-7s-chat"></i>
+								<h3>Support via Chat</h3>
+								<p>Id mea congue dictas, nec et summo mazim impedit. Vim te audiam impetus interpretaris, cum no alii option, cu sit mazim libris. </p>
+							</a>
+						</div>
+					</div>
+					<!--/row-->
+				</div>
+
+				<section>
+					<img loading="lazy" width="100%" src="img/home/family.png">
+				</section>
+
+			</main>
+			<!-- /main -->
+
+			<footer>
+				<div class="container margin_60_35">
+					<div class="row">
+						<div class="col-lg-5 col-md-12 p-r-5">
+							<p>
+							<h3 style="color: #fff">Cool Products</h3>
+							</p>
+							<p>Mea nibh meis philosophia eu. Duis legimus efficiantur ea sea. Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu. Nihil facilisi
+								indoctum an vix, ut delectus expetendis vis.</p>
+							<div class="follow_us">
+								<ul>
+									<li>Siguenos en nuestras sociales</li>
+									<li><a href="#0"><i class="ti-facebook"></i></a></li>
+									<li><a href="#0"><i class="ti-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 ml-lg-auto">
+							<h5>Useful links</h5>
+							<ul class="links">
+								<li><a href="about.html">About</a></li>
+								<li><a href="login.html">Login</a></li>
+								<li><a href="register.html">Register</a></li>
+								<li><a href="blog.html">News &amp; Events</a></li>
+								<li><a href="contacts.html">Contacts</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<h5>Contactanos</h5>
+							<ul class="contacts">
+								<li><a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a></li>
+								<li><a href="mailto:info@Panagea.com"><i class="ti-email"></i> info@Panagea.com</a></li>
+							</ul>
+							<div id="newsletter">
 
 							</div>
-						
 						</div>
-						-->
-
-
-		<section>
-			<video loading="lazy" width="100%" height="auto" autoplay muted style="margin: auto; display: block;" loop>
-				<source src="video/cool.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			</video>
-		</section>
-
-		<div class="call_section adventure" style="display: none;">
-			<div class="container clearfix">
-				<div class="col-lg-5 col-md-6 float-left wow" data-wow-offset="250" data-aos="zoom-in-down" data-aos-duration="1500">
-					<div class="block-reveal">
-						<div class="block-vertical"></div>
-						<div class="box_1">
-							<h3 class="clf-content-buy_title tag_ title-big"></h3>
-							<p class="clf-content-buy_summary tag_ title-medium"></p>
-							<a href="#0" class="btn_1 rounded">Comprar</a>
+					</div>
+					<!--/row-->
+					<hr>
+					<div class="row">
+						<div class="col-lg-6">
+							<ul id="footer-selector">
+								<li>
+									<div class="styled-select" id="lang-selector">
+										<select>
+											<option value="English" selected>English</option>
+											<option value="Spanish">Spanish</option>
+										</select>
+									</div>
+								</li>
+								<li>
+									<div class="styled-select" id="currency-selector">
+										<select>
+											<option value="US Dollars" selected>US Dollars</option>
+											<option value="Euro">Euro</option>
+										</select>
+									</div>
+								</li>
+								<li><img src="img/cards_all.svg" alt=""></li>
+							</ul>
+						</div>
+						<div class="col-lg-6">
+							<ul id="additional_links">
+								<li><a href="#0">Terms and conditions</a></li>
+								<li><a href="#0">Privacy</a></li>
+								<li><span>© 2019 Panagea</span></li>
+							</ul>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-
-
-
-		<div class="container margin_60_35" style="display: none;">
-			<div class="row">
-				<aside class="col-lg-3" id="sidebar">
-					<div class="box_style_cat" id="faq_box">
-						<ul id="cat_nav">
-							<li><a href="#payment" class="active"><i class="icon_document_alt"></i>Payments</a></li>
-							<li><a href="#tips"><i class="icon_document_alt"></i>Suggestions</a></li>
-							<li><a href="#reccomendations"><i class="icon_document_alt"></i>Reccomendations</a></li>
-							<li><a href="#terms"><i class="icon_document_alt"></i>Terms&amp;conditons</a></li>
-						</ul>
-					</div>
-					<!--/sticky -->
-				</aside>
-				<!--/aside -->
-
-				<div class="col-lg-9" id="faq">
-					<h4 class="nomargin_top">Payments</h4>
-					<div role="tablist" class="add_bottom_45 accordion_2" id="payment">
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a data-toggle="collapse" href="#collapseOne_payment" aria-expanded="true"><i class="indicator ti-minus"></i>Introdocution</a>
-								</h5>
-							</div>
-
-							<div id="collapseOne_payment" class="collapse show" role="tabpanel" data-parent="#payment">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseTwo_payment" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Generative Modeling Review
-									</a>
-								</h5>
-							</div>
-							<div id="collapseTwo_payment" class="collapse" role="tabpanel" data-parent="#payment">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseThree_payment" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Variational Autoencoders
-									</a>
-								</h5>
-							</div>
-							<div id="collapseThree_payment" class="collapse" role="tabpanel" data-parent="#payment">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-					</div>
-					<!-- /accordion payment -->
-
-					<h4 class="nomargin_top">Suggestions</h4>
-					<div role="tablist" class="add_bottom_45 accordion_2" id="tips">
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a data-toggle="collapse" href="#collapseOne_tips" aria-expanded="true"><i class="indicator ti-plus"></i>Introdocution</a>
-								</h5>
-							</div>
-
-							<div id="collapseOne_tips" class="collapse" role="tabpanel" data-parent="#tips">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseTwo_tips" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Generative Modeling Review
-									</a>
-								</h5>
-							</div>
-							<div id="collapseTwo_tips" class="collapse" role="tabpanel" data-parent="#tips">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseThree_tips" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Variational Autoencoders
-									</a>
-								</h5>
-							</div>
-							<div id="collapseThree_tips" class="collapse" role="tabpanel" data-parent="#tips">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-					</div>
-					<!-- /accordion suggestions -->
-
-					<h4 class="nomargin_top">Reccomendations</h4>
-					<div role="tablist" class="add_bottom_45 accordion_2" id="reccomendations">
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a data-toggle="collapse" href="#collapseOne_reccomendations" aria-expanded="true"><i class="indicator ti-plus"></i>Introdocution</a>
-								</h5>
-							</div>
-
-							<div id="collapseOne_reccomendations" class="collapse" role="tabpanel" data-parent="#reccomendations">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseTwo_reccomendations" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Generative Modeling Review
-									</a>
-								</h5>
-							</div>
-							<div id="collapseTwo_reccomendations" class="collapse" role="tabpanel" data-parent="#reccomendations">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseThree_reccomendations" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Variational Autoencoders
-									</a>
-								</h5>
-							</div>
-							<div id="collapseThree_reccomendations" class="collapse" role="tabpanel" data-parent="#reccomendations">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-					</div>
-					<!-- /accordion Reccomendations -->
-
-					<h4 class="nomargin_top">Terms&amp;conditons</h4>
-					<div role="tablist" class="add_bottom_45 accordion_2" id="terms">
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a data-toggle="collapse" href="#collapseOne_terms" aria-expanded="true"><i class="indicator ti-plus"></i>Introdocution</a>
-								</h5>
-							</div>
-
-							<div id="collapseOne_terms" class="collapse" role="tabpanel" data-parent="#terms">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseTwo_terms" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Generative Modeling Review
-									</a>
-								</h5>
-							</div>
-							<div id="collapseTwo_terms" class="collapse" role="tabpanel" data-parent="#terms">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-						<div class="card">
-							<div class="card-header" role="tab">
-								<h5 class="mb-0">
-									<a class="collapsed" data-toggle="collapse" href="#collapseThree_terms" aria-expanded="false">
-										<i class="indicator ti-plus"></i>Variational Autoencoders
-									</a>
-								</h5>
-							</div>
-							<div id="collapseThree_terms" class="collapse" role="tabpanel" data-parent="#terms">
-								<div class="card-body">
-									<p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
-										occaecat
-										craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-									<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
-										dolor
-										brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-										assumenda
-										shoreditch et.</p>
-								</div>
-							</div>
-						</div>
-						<!-- /card -->
-					</div>
-					<!-- /accordion Terms -->
-
-				</div>
-				<!-- /col -->
-			</div>
-			<!-- /row -->
-		</div>
-
-
-		<!--/container-->
-		</main>
-
-		<!-- /main -->
-
-		<footer style="background-color: #000;">
-			<div class="container margin_60_35" style="background-color: #000;">
-				<div class="row">
-					<div class="col-lg-6 col-md-12 p-r-5">
-						<h2 style="font-weight: bold;"><img src="/img/logo3.png" width="300px" height="60px"></h2>
-						<p></p>
-					</div>
-					<div class="col-lg-3 col-md-6">
-
-					</div>
-
-
-					<div class="col-lg-3 col-md-6">
-						<h5>Contactanos</h5>
-						<ul class="contacts">
-							<li><a href="tel://61280932400"><i class="ti-mobile"></i> + 61 23 8093 3400</a></li>
-							<li><a href="mailto:info@Panagea.com"><i class="ti-email"></i> info@Panagea.com</a></li>
-						</ul>
-
-					</div>
-				</div>
-				<!--/row-->
-			</div>
-		</footer>
-		<!--/footer-->
+			</footer>
+			<!--/footer-->
 		</div>
 		<!-- page -->
 
 		<!-- Sign In Popup -->
 		<div id="sign-in-dialog" class="zoom-anim-dialog mfp-hide">
-			<div class="small-dialog-header">
-				<h3>Sign In</h3>
-			</div>
-			<form>
-				<div class="sign-in-wrapper">
-					<a href="#0" class="social_bt facebook">Login with Facebook</a>
-					<a href="#0" class="social_bt google">Login with Google</a>
-					<div class="divider"><span>Or</span></div>
-					<div class="form-group">
-						<label>Email</label>
-						<input type="email" class="form-control" name="email" id="email">
-						<i class="icon_mail_alt"></i>
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input type="password" class="form-control" name="password" id="password" value="">
-						<i class="icon_lock_alt"></i>
-					</div>
-					<div class="clearfix add_bottom_15">
-						<div class="checkboxes float-left">
-							<label class="container_check">Remember me
-								<input type="checkbox">
-								<span class="checkmark"></span>
-							</label>
-						</div>
-						<div class="float-right mt-1"><a id="forgot" href="javascript:void(0);">Forgot Password?</a></div>
-					</div>
-					<div class="text-center"><input type="submit" value="Log In" class="btn_1 full-width"></div>
-					<div class="text-center">
-						Don’t have an account? <a href="register.html">Sign up</a>
-					</div>
-					<div id="forgot_pw">
-						<div class="form-group">
-							<label>Please confirm login email below</label>
-							<input type="email" class="form-control" name="email_forgot" id="email_forgot">
-							<i class="icon_mail_alt"></i>
-						</div>
-						<p>You will receive an email containing a link allowing you to reset your password to a new preferred one.</p>
-						<div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
-					</div>
-				</div>
-			</form>
+
+
 			<!--form -->
 		</div>
 		<!-- /Sign In Popup -->
@@ -916,120 +596,97 @@
 		<!-- COMMON SCRIPTS -->
 		<script src="js/common_scripts.js"></script>
 		<script src="js/aos.js" type="text/javascript"></script>
+
 		<script src="js/main.js"></script>
 		<script src="assets/validate.js"></script>
+
+
 		<script>
 			AOS.init({
 				easing: 'ease-in-out-sine'
 			});
 		</script>
-		<!-- SPECIFIC SCRIPTS -->
-		<script src="js/video_header.js"></script>
+
+		<!-- DATEPICKER  -->
 		<script>
-			HeaderVideo.init({
-				container: $('.header-video'),
-				header: $('.header-video--media'),
-				videoTrigger: $("#video-trigger"),
-				autoPlayVideo: true
+			$(function () {
+				'use strict';
+				$('input[name="dates"]').daterangepicker({
+					autoUpdateInput: false,
+					minDate: new Date(),
+					locale: {
+						cancelLabel: 'Clear'
+					}
+				});
+				$('input[name="dates"]').on('apply.daterangepicker', function (ev, picker) {
+					$(this).val(picker.startDate.format('MM-DD-YY') + ' > ' + picker.endDate.format('MM-DD-YY'));
+				});
+				$('input[name="dates"]').on('cancel.daterangepicker', function (ev, picker) {
+					$(this).val('');
+				});
 			});
+		</script>
+
+		<!-- INPUT QUANTITY  -->
+		<script src="js/input_qty.js"></script>
+
+		<!-- Autocomplete -->
+		<script>
+			function initMap() {
+				var input = document.getElementById('autocomplete');
+				var autocomplete = new google.maps.places.Autocomplete(input);
+
+				autocomplete.addListener('place_changed', function () {
+					var place = autocomplete.getPlace();
+					if (!place.geometry) {
+						window.alert("Autocomplete's returned place contains no geometry");
+						return;
+					}
+
+					var address = '';
+					if (place.address_components) {
+						address = [
+							(place.address_components[0] && place.address_components[0].short_name || ''),
+							(place.address_components[1] && place.address_components[1].short_name || ''),
+							(place.address_components[2] && place.address_components[2].short_name || '')
+						].join(' ');
+					}
+				});
+			}
 		</script>
 
 		<link rel="stylesheet" type="text/css" href="/modal/css/modal-video.css">
 		<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<script src="/modal/js/modal-video.js"></script>
 
-		<!-- Cluuf configuration  -->
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		<script>localStorage.setItem("privacyPolicyURL", false);</script>
-		<link async rel="stylesheet" href="https://cluuftracks.herokuapp.com/cluuf.css">
-		<script async src="https://cluuftracks.herokuapp.com/track.js?cluuf_key=93063647283012094424995467&instance=6121428fd180a640e08bd9e1" id="cluuf-analytics"></script>
-		<!-- Cluuf configuration https://cluuftracks.herokuapp.com -->
-		</script>
-
-
-		<!-- SPECIFIC SCRIPTS -->
-		<script src="js/modernizr_tables.js"></script>
-		<script src="js/tables_func.js"></script>
-
-		<script>
-
-			$(".black-number").val(0)
-			$(".white-number").val(0)
-
-
-			$(".black-number").change(function () {
-				$(".black-total").text($(".black-number").val() * 678000);
-				$(".black-cantidad").text($(".black-number").val());
-				calculateTotales()
-			});
-
-			$(".white-number").change(function () {
-				$(".white-total").text($(".white-number").val() * 678000);
-				$(".white-cantidad").text($(".white-number").val());
-				calculateTotales()
-			});
-
-
-			const totales = [
-				{ shipping: "120.000", descuento: "0", total: "1", monto: "10.000" },
-				{ shipping: "120.000", descuento: "10%", total: "2", monto: "20.000" },
-				{ shipping: "120.000", descuento: "15%", total: "3", monto: "30.000" },
-				{ shipping: "120.000", descuento: "20%", total: "4", monto: "40.000" },
-				{ shipping: "120.000", descuento: "20%", total: "5", monto: "50.000" },
-				{ shipping: "120.000", descuento: "30%", total: "6", monto: "60.000" },
-				{ shipping: "120.000", descuento: "40%", total: "7", monto: "70.000" },
-			]
-
-
-
-			const calculateTotales = () => {
-				let total = parseInt($(".white-number").val()) + parseInt($(".black-number").val());
-				$(".subtotal-total").text(totales[total].shipping);
-				$(".shipping-total").text(totales[total].shipping);
-				$(".descuento-total").text(totales[total].descuento);
-				$(".total-total").text(totales[total].monto);
+		<style>
+			.btn-comprar-logo {
+				background: #dc3545;
+				font-weight: bold;
+				font-family: 'Poppins';
+				font-size: 18px;
+				letter-spacing: 5px;
+				text-transform: uppercase;
+				padding: 7px;
 			}
 
 
-			const formSubmit = () => {
-				connectToCluufCRM({
-					email: {
-						value: jQuery("#email").val(),
-						required: true,
-						message: "Please verify Email and try again."
-					},
-					name: {
-						value: jQuery("#name").val(),
-						required: true,
-						message: "Please verify Name and try again."
-					},
-					message: {
-						value: jQuery("#message").val(),
-						required: true,
-						message: "Please verify Message and try again."
-					},
-					phone: {
-						required: false,
-					},
-					campaign: "Contact Us - Website Form",
-					formId: "60740e2517c4317041b6a591", // proporcionado por cluuf-web
-					successMessage: "El mensaje ha sido enviado con exito",
-				}, {
-					onSuccess: (response) => {
-						jQuery("#name").val(''),
-							jQuery("#email").val('');
-						jQuery("#message").val('');
-					},
-					onError: () => console.log("Error enviando el formulario"),
+			.noDesktop {
+				display: none;
+			}
+
+			@media (max-width: 769px) {
+
+				.noDesktop {
+					display: block;
 				}
-				);
+
+				.no-mobile {
+					display: none !important;
+				}
 			}
-			const resetMessagesForm = () => {
-				jQuery(".formMessageSuccess").hide();
-				jQuery(".formMessageError").hide();
-				jQuery(".formMessageValidation").hide();
-			}
-		</script>
+		</style>
+
 		<script>
 			const loadCluufContent = ({
 				method = "GET",
@@ -1093,7 +750,25 @@
 				} catch (error) { }
 			};
 
+			const blackSelected = () => {
+				$(".image-white").hide();
+				$(".image-black").show();
+				$(".btn-black").addClass("border-selected");
+				$(".btn-white").removeClass("border-selected");
+			}
+
+			const whiteSelected = () => {
+				$(".image-black").hide();
+				$(".image-white").show();
+				$(".btn-white").addClass("border-selected");
+				$(".btn-black").removeClass("border-selected");
+			}
+
 			$(document).ready(function () {
+
+				whiteSelected();
+
+
 				new ModalVideo('.js-modal-btn');
 				loadCluufContent({
 					method: "GET",
@@ -1102,7 +777,15 @@
 			});
 
 		</script>
-
+		<script type="text/javascript">
+			window._chatlio = window._chatlio || [];
+			!function () {
+				var t = document.getElementById("chatlio-widget-embed"); if (t && window.ChatlioReact && _chatlio.init) return void _chatlio.init(t, ChatlioReact); for (var e = function (t) { return function () { _chatlio.push([t].concat(arguments)) } }, i = ["configure", "identify", "track", "show", "hide", "isShown", "isOnline", "page", "open", "showOrHide"], a = 0; a < i.length; a++)_chatlio[i[a]] || (_chatlio[i[a]] = e(i[a])); var n = document.createElement("script"), c = document.getElementsByTagName("script")[0]; n.id = "chatlio-widget-embed", n.src = "https://w.chatlio.com/w.chatlio-widget.js", n.async = !0, n.setAttribute("data-embed-version", "2.3");
+				n.setAttribute('data-widget-options', '{"embedSidebar": true}');
+				n.setAttribute('data-widget-id', '89dd31dc-aeff-41cd-4a53-e72574ca7412');
+				c.parentNode.insertBefore(n, c);
+			}();
+		</script>
 
 	</body>
 
