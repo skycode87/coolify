@@ -6104,26 +6104,26 @@ a.grid_item.latest_adventure em {
 }
 
 .banner1 {
-  background: url(../img/version3/office_desktop.jpg) center center no-repeat;
+  background: url(../img/version3/office_desktop.webp) center center no-repeat;
 }
 
 .banner2 {
-  background: url(../img/version3/golf_desktop.jpg) center center no-repeat;
+  background: url(../img/version3/golf_desktop.webp) center center no-repeat;
 }
 
 
 .banner3 {
-  background: url(../img/version3/adventure.jpg) center center no-repeat;
+  background: url(../img/version3/adventure.webp) center center no-repeat;
 }
 
 
 .banner4 {
-  background: url(../img/version3/office_mobile.jpg) center center no-repeat;
+  background: url(../img/version3/office_mobile.webp) center center no-repeat;
 }
 @media (max-width: 767px) {
 
   .banner1 {
-    background: url(../img/version3/office_mobile.jpg) center center no-repeat;
+    background: url(../img/version3/office_mobile.webp) center center no-repeat;
   
   }
 
